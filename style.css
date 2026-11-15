@@ -1,0 +1,229 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f6efe5;
+    color: #42372e;
+    line-height: 1.8;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 90vh;
+    background:
+        linear-gradient(rgba(40, 30, 25, 0.4),
+        rgba(40, 30, 25, 0.55)),
+        url("sagrada-familia.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: #fffaf0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+nav h2 {
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 150px 20px 100px;
+}
+
+.subtitle {
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #b98752;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero-content .subtitle {
+    color: #f3d7a5;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 75px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: #b98752;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #91683e;
+}
+
+/* INTRO SECTION */
+.intro {
+    text-align: center;
+    padding: 90px 15%;
+}
+
+.intro h2,
+.architecture h2,
+.stained-glass h2,
+.spain h2,
+.reflection h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #705039;
+}
+
+.intro p {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+/* ARCHITECTURE SECTION */
+.architecture {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 10%;
+    background-color: #e9ddce;
+}
+
+.architecture-text {
+    flex: 1;
+}
+
+.architecture img {
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* STAINED GLASS SECTION */
+.stained-glass {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 90px 15%;
+    background:
+        linear-gradient(rgba(35, 25, 25, 0.65),
+        rgba(35, 25, 25, 0.65)),
+        url("stained-glass.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.stained-glass h2 {
+    color: #f5dfb9;
+}
+
+.stained-glass .subtitle {
+    color: #e7b96c;
+}
+
+/* SPAIN SECTION */
+.spain {
+    text-align: center;
+    padding: 90px 15%;
+    background-color: #f6efe5;
+}
+
+.spain p {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+/* PERSONAL REFLECTION */
+.reflection {
+    text-align: center;
+    padding: 90px 15%;
+    background-color: #e9ddce;
+}
+
+.reflection p {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-style: italic;
+    color: #a16f43;
+    margin-top: 35px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #49372b;
+    color: #f6efe5;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .architecture {
+        flex-direction: column;
+        padding: 60px 8%;
+    }
+
+    .architecture img {
+        width: 100%;
+    }
+
+    .hero-content {
+        padding-top: 120px;
+    }
+
+    .intro,
+    .spain,
+    .reflection,
+    .stained-glass {
+        padding: 65px 8%;
+    }
+
+    .intro h2,
+    .architecture h2,
+    .stained-glass h2,
+    .spain h2,
+    .reflection h2 {
+        font-size: 30px;
+    }
+}
